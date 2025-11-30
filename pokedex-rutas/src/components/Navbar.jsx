@@ -17,6 +17,12 @@ export function Navbar() {
                 <li>
                     <Link to="/gen3">Gen3</Link>
                 </li>
+                
+                <li>
+                    <Link to="/digimon">Digimon</Link>
+                </li>
+
+
             </ul>
         </nav>
     )

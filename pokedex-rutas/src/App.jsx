@@ -3,19 +3,17 @@ import { Navbar } from './components/Navbar'
 import { Home } from './pages/Home'
 import { GenerationPage } from './pages/GenerationPage'
 import { NotFound } from './pages/NotFound'
+import { DigimonPage } from './pages/DigimonPage'
 
 function App() {
   return (
     <div>
-      {/* Barra de navegación */}
       <Navbar />
 
       <main className="container">
         <Routes>
-          {/* Página de inicio */}
           <Route path="/" element={<Home />} />
 
-          {/* Generación 1 */}
           <Route
             path="/gen1"
             element={
@@ -27,7 +25,6 @@ function App() {
             }
           />
 
-          {/* Generación 2 */}
           <Route
             path="/gen2"
             element={
@@ -39,7 +36,6 @@ function App() {
             }
           />
 
-          {/* Generación 3 */}
           <Route
             path="/gen3"
             element={
@@ -51,7 +47,8 @@ function App() {
             }
           />
 
-          {/* Cualquier ruta no existente => Página 404 */}
+          <Route path="/digimon" element={<DigimonPage />} />
+
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
